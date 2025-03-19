@@ -1,5 +1,5 @@
 [build]
-  publish = "Shopping-List"
+  publish = "build" # or "dist" depending on your build output directory
   command = "npm run build"
 
 [[redirects]]
