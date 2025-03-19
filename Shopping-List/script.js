@@ -100,13 +100,14 @@ function setItemtoEdit(item) {
   itemList
     .querySelectorAll('li')
     .forEach((i) => i.classList.remove('edit-mode'));
-formBtn.innerHTMl = '<i class="fa-solid fa-pen"></i> Update Item';
+  
+  formBtn.innerHTML = '<i class="fa-solid fa-pen"></i> Update Item'; 
 
-itemInput.value = item.textContent;
+  itemInput.value = item.textContent;
 
-formBtn.style.backgroundColor = '#f8d7da';
+  formBtn.style.backgroundColor = '#f8d7da';
 
-item.classList.add('edit-mode');
+  item.classList.add('edit-mode');
 }
 
 function removeItem(item) {
