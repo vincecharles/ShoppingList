@@ -43,6 +43,41 @@
           />
         </div>
         <div class="form-control">
+          <label for="category-select" class="sr-only">Select Category</label>
+          <select id="category-select" class="form-select" aria-label="Select a category for your item">
+            <option value="">Select Category</option>
+            <option value="Fruits & Vegetables">🍎 Fruits & Vegetables</option>
+            <option value="Dairy & Eggs">🥛 Dairy & Eggs</option>
+            <option value="Meat & Seafood">🥩 Meat & Seafood</option>
+            <option value="Bakery & Bread">🍞 Bakery & Bread</option>
+            <option value="Frozen Foods">🧊 Frozen Foods</option>
+            <option value="Canned & Jarred Goods">🥫 Canned & Jarred Goods</option>
+            <option value="Grains, Pasta & Rice">🍝 Grains, Pasta & Rice</option>
+            <option value="Snacks & Chips">🍿 Snacks & Chips</option>
+            <option value="Beverages">🥤 Beverages</option>
+            <option value="Condiments & Sauces">🍯 Condiments & Sauces</option>
+            <option value="Spices & Seasonings">🧂 Spices & Seasonings</option>
+            <option value="Breakfast & Cereal">🥣 Breakfast & Cereal</option>
+            <option value="Deli & Prepared Foods">🥪 Deli & Prepared Foods</option>
+            <option value="Health & Wellness">💊 Health & Wellness</option>
+            <option value="Baby Products">🍼 Baby Products</option>
+            <option value="Pet Supplies">🐾 Pet Supplies</option>
+            <option value="Household & Cleaning">🧹 Household & Cleaning</option>
+            <option value="Personal Care">🧴 Personal Care</option>
+            <option value="Paper & Plastic Products">🧻 Paper & Plastic Products</option>
+            <option value="Baking Supplies">🧁 Baking Supplies</option>
+            <option value="Oils & Vinegars">🫒 Oils & Vinegars</option>
+            <option value="Nuts & Dried Fruits">🥜 Nuts & Dried Fruits</option>
+            <option value="Candy & Sweets">🍬 Candy & Sweets</option>
+            <option value="Coffee & Tea">☕ Coffee & Tea</option>
+            <option value="Alcohol & Wine">🍷 Alcohol & Wine</option>
+            <option value="International Foods">🌍 International Foods</option>
+            <option value="Organic & Natural">🌿 Organic & Natural</option>
+            <option value="Gluten-Free">🌾 Gluten-Free</option>
+            <option value="Other">📦 Other</option>
+          </select>
+        </div>
+        <div class="form-control">
           <button
             type="submit"
             class="btn"
@@ -61,34 +96,19 @@
         />
       </div>
 
+      <!-- Category Filter -->
+      <div class="category-filter">
+        <label for="category-filter-select" class="sr-only">Filter by Category</label>
+        <select id="category-filter-select" class="form-select" aria-label="Filter items by category">
+          <option value="">All Categories</option>
+        </select>
+      </div>
+
+      <h2 class="section-title"><i class="fa-solid fa-cart-shopping"></i> Shopping List</h2>
       <ul
         id="item-list"
         class="items"
       >
-         <li>
-          Apples
-          <button class="remove-item btn-link text-red" title="Remove Item">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Orange Juice
-          <button class="remove-item btn-link text-red" title="Remove Item">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Oreos
-          <button class="remove-item btn-link text-red" title="Remove Item">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li>
-        <li>
-          Milk
-          <button class="remove-item btn-link text-red" title="Remove Item">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </li> 
       </ul>
 
       <button
@@ -97,6 +117,17 @@
       >
         Clear All
       </button>
+
+      <!-- Checked Items Section -->
+      <div id="checked-section" class="checked-section">
+        <h2 class="section-title checked-title">
+          <i class="fa-solid fa-circle-check"></i> Checked Items
+          <button id="clear-checked" class="btn-clear-checked" title="Clear Checked Items">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </h2>
+        <ul id="checked-list" class="items checked-items"></ul>
+      </div>
     </div>
 
     <script defer src="script.js"></script>
